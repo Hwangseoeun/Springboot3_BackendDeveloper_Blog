@@ -39,7 +39,7 @@ public class BlogApiController {
                 .body(articles);
     }
 
-    @GetMapping("api/articles/{id}")
+    @GetMapping("/api/articles/{id}")
     //url 경로에서 값 추출
     public ResponseEntity<ArticleResponse> findArticle(@PathVariable long id){
         Article article = blogService.findById(id);
