@@ -15,6 +15,7 @@ public class ExampleController {
     @GetMapping("/thymeleaf/example")
     //뷰로 데이터를 넘겨주는 모델 객체
     public String thymeleafExample (Model model){
+
         Person examplePerson = new Person();
         examplePerson.setId(1L);
         examplePerson.setName("홍길동");
